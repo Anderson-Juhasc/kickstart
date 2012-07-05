@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+// SCSS Toolkit by Anderson Juhasc
+// Based in SCSS Toolkit by David Rapson - starter toolkit for SCSS projects
+//
+// The toolkit uses a combination of recommendations from Adaptive Web Design, http://easy-readers.net/
+// and Scalable and Modular Architecture for CSS (SMACSS) http://smacss.com/book
+
+// Plugins
+// =======
+
+// If you are using Compass
+@import "compass";
+
+// Sass Features
+// =============
+
+@import "variables", "functions/all", "mixins/all";
+
+// The Styles
+// ==========
+// Styles are defined in the following order & groupings:
+// Base, Layout, Module, State
+
+// Base styles (reset + elements)
+@import "common/base";
+
+// Sprites
+@import "common/sprite";
+
+// Layout
+// Layout = major components, e.g., header, footer etc.
+// Module = minor components, e.g., navigation bar, callout, widgets etc.
+// State  = a state is something that augments + overrides all other styles, e.g., success or error state
+
+@import "components/layout", "components/modules/all", "components/state";
+
+// Helpers should come last out of screen styles
+@import "common/helpers";
+
+// Print styles
+@import "print";
