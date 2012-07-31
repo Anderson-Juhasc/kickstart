@@ -1,43 +1,52 @@
-/*= @group Elements
----------------------------------------------------------------------- */
+// ==========================================================================
+// ELEMENTS
+// ==========================================================================
+
 // Based on HTML5 Boilerplate default styles
+// ==========================================================================
 
   /*= @group Typography
   ---------------------------------------------------------------------- */
 
-  body { font: $font-weight-normal #{$base-fs/16*100}%/($base-lh/$base-fs) sans-serif; }
+  body { font: $font-weight-normal ms(0) sans-serif; }
 
     /*= @group Font Stacks
     ---------------------------------------------------------------------- */
 
-    /* Default font stack */
+    // Default font stack
     body, select, input, textarea, button { font-family: $font-family-default; }
 
-    /* Display font stack */
+    // Display font stack
     h1,h2,h3,h4,h5,h6 { font-family: $font-family-display; }
 
-    /* Alternate font stack */
+    // Alternate font stack
     blockquote, figcaption { font-family: $font-family-serif;  }
 
-    // /* Caption font stack, should be suitable for smaller sizes */
+    // Caption font stack, should be suitable for smaller sizes
     // e.g. [role=contentinfo], .caption { font-family: $font-family-caption; }
 
-    /* Monospace font stack, for code samples and preformatted content */
+    // Monospace font stack, for code samples and preformatted content
     pre, code, kbd, samp { font-family: $font-family-monospace; }
 
     /*= @group Headings
     ---------------------------------------------------------------------- */
 
-    h1, h2, h3, h4, h5, h6  { font-style: normal; }
+    h1, h2, h3, h4, h5, h6  {
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        margin-bottom: ms(0);
+        margin-top: ms(0);
+    }
     h1, h2, h3              { font-weight: $font-weight-semibold; }
     h4, h5, h6              { font-weight: $font-weight-normal; }
 
-    h1 { font-size: rs(32); margin: 0 0 rs(21,32) 0; }
-    h2 { font-size: rs(28); margin: rs(21,28) 0 rs(7,28) 0; }
-    h3 { font-size: rs(24); margin: rs(21,24) 0 rs(7,24) 0; }
-    h4 { font-size: rs(21); margin: rs(21,21) 0 rs(7,21) 0; }
-    h5 { font-size: rs(18); margin: rs(21,18) 0 rs(7,18) 0; }
-    h5 { font-size: rs(16); margin: rs(21,16) 0 rs(7,16) 0; }
+
+    h1 { font-size: ms(5); }
+    h2 { font-size: ms(4); }
+    h3 { font-size: ms(3); }
+    h4 { font-size: ms(2); }
+    h5 { font-size: ms(1); }
+    h6 { font-size: ms(0); }
 
     /*= @group Links
     ---------------------------------------------------------------------- */
@@ -61,10 +70,22 @@
     ---------------------------------------------------------------------- */
 
     /* Default margins */
-    p, ul, ol, dl  { margin: 0 0 rs($base-lh) 0; }
+    p {
+        font-size: ms(0);
+        line-height: 1.6;
+        margin-bottom: ms(1);
+
+        &.lead { font-size: ms(0) * 1.25; line-height: 1.6; margin-bottom: ms(1); }
+        img.left, img { margin: ms(1); margin-left: 0; }
+        img.right { margin: ms(1); margin-right: 0; }
+    }
+
+    hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
+
+    ul, ol, dl  { margin: 0 0 rs($base-lh) 0; }
 
     /* Lists */
-    ul, ol, dl            { padding: 0; }
+    ul, ol, dl            { font-size: ms(0); line-height: 1.6; margin-bottom: ms(1); padding: 0; }
     ul ul, ol ol, dl dl   { margin-bottom: 0; }
     ul li, ol li          { margin-left: rs($base-lh,$base-fs); }
     ul li                 { list-style: disc outside; }
@@ -121,9 +142,20 @@
   q:before, q:after { content: ""; content: none; }
   q, cite, blockquote { font-style: italic; }
 
-  blockquote {
-
+  blockquote, blockquote p {
+    line-height: 1.5;
+    margin: 0 0 ms(1);
+    padding: 9px 20px 0 19px;
   }
+
+  blockquote cite {
+      display: block;
+      font-size: ms(0) - 1;
+      color: #555;
+
+      &:before { content: "\2014 \0020"; }
+  }
+
 
   /*= @group Code
   ---------------------------------------------------------------------- */

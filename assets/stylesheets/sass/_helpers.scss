@@ -1,8 +1,9 @@
-/*= @group NON-SEMANTIC HELPERS
- ---------------------------------------------------------------------- */
+// ==========================================================================
+// NON-SEMANTIC HELPERS
+// ==========================================================================
 
     // For image replacement
-    .ir { border: 0; font: 0/0; text-shadow: none; color: transparent !important; background-color: transparent; }
+    .ir { border: 0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent; }
 
     //Hide only visually, but have it available for screenreaders: by Jon Neal. www.webaim.org/techniques/css/invisiblecontent/ & j.mp/visuallyhidden
     .visuallyhidden {
@@ -24,3 +25,8 @@
     // floats
     .pull-left { float: left; }
     .pull-right { float: right; }
+
+    // vertical align middle
+    .middle {
+        @include inline-block(middle);
+    }

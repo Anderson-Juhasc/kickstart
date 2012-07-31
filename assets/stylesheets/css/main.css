@@ -1,0 +1,699 @@
+/*= @group Reset
+---------------------------------------------------------------------- */
+/*
+  Based on normalize.css
+  http://html5boilerplate.com/docs/The-style/
+  http://necolas.github.com/normalize.css/
+*/
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 10, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 11, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 17, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+body {
+  margin: 0;
+}
+
+/* Selections */
+/* Must be declared separately */
+/* line 22, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+/* line 22, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_reset.scss */
+::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+/*= @group Typography
+---------------------------------------------------------------------- */
+/* line 11, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+body {
+  font: 400 14px sans-serif;
+}
+
+/*= @group Font Stacks
+---------------------------------------------------------------------- */
+/* line 17, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+body, select, input, textarea, button {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* line 20, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Serif", Georgia, serif;
+}
+
+/* line 23, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+blockquote, figcaption {
+  font-family: "PT Serif", Georgia, serif;
+}
+
+/* line 29, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+pre, code, kbd, samp {
+  font-family: "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", "Droid Mono", monospace;
+}
+
+/*= @group Headings
+---------------------------------------------------------------------- */
+/* line 34, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+/* line 40, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* line 41, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h4, h5, h6 {
+  font-weight: 400;
+}
+
+/* line 44, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h1 {
+  font-size: 44px;
+}
+
+/* line 45, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h2 {
+  font-size: 37px;
+}
+
+/* line 46, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h3 {
+  font-size: 27px;
+}
+
+/* line 47, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h4 {
+  font-size: 23px;
+}
+
+/* line 48, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h5 {
+  font-size: 17px;
+}
+
+/* line 49, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+h6 {
+  font-size: 14px;
+}
+
+/*= @group Links
+---------------------------------------------------------------------- */
+/* line 55, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a {
+  text-decoration: none;
+  border-bottom: 1px dotted #242424;
+  word-wrap: break-word;
+}
+
+/* line 61, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a {
+  color: #242424;
+}
+
+/* line 62, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a:visited {
+  color: #444444;
+}
+
+/* line 63, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a:hover {
+  color: pink;
+}
+
+/* line 64, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a:active {
+  color: yellow;
+}
+
+/* line 66, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 67, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/*= @group Text Level Elements
+---------------------------------------------------------------------- */
+/* Default margins */
+/* line 73, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+/* line 78, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+p.lead {
+  font-size: 17.5px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+/* line 79, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+p img.left, p img {
+  margin: 17px;
+  margin-left: 0;
+}
+/* line 80, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+p img.right {
+  margin: 17px;
+  margin-right: 0;
+}
+
+/* line 83, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+
+/* line 85, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ul, ol, dl {
+  margin: 0 0 rs(24) 0;
+}
+
+/* Lists */
+/* line 88, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ul, ol, dl {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+  padding: 0;
+}
+
+/* line 89, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ul ul, ol ol, dl dl {
+  margin-bottom: 0;
+}
+
+/* line 90, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ul li, ol li {
+  margin-left: rs(24, 16);
+}
+
+/* line 91, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ul li {
+  list-style: disc outside;
+}
+
+/* line 92, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ol li {
+  list-style: outside decimal;
+}
+
+/* line 93, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ul li ul {
+  margin: rs(12) 0 0 rs(16);
+}
+
+/* line 94, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+dl dt {
+  font-weight: bold;
+}
+
+/* line 95, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+dl dd {
+  margin: 0 0 rs(16) 0;
+}
+
+/* line 97, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+nav ul, nav ol, .nav li, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Text Marking */
+/* line 105, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ins, mark {
+  color: #0069ff;
+  background-color: #ff9600;
+}
+
+/* line 106, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 107, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+mark {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 108, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 109, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 110, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 112, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 113, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+.initialism {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+/* line 116, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 117, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 118, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/*= @group Embeded Content
+---------------------------------------------------------------------- */
+/* _width hack is for IE6 and below */
+/* line 125, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+img, embed, object, video {
+  max-width: 100%;
+  _width: 100%;
+}
+
+/* line 126, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/* Correct overflow displayed oddly in IE9 */
+/* line 129, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*= @group Figures
+---------------------------------------------------------------------- */
+/* line 135, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+figure {
+  margin: 0;
+}
+
+/*= @group Quotes
+---------------------------------------------------------------------- */
+/* line 141, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+q {
+  quotes: none;
+}
+
+/* line 142, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 143, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+q, cite, blockquote {
+  font-style: italic;
+}
+
+/* line 145, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+blockquote, blockquote p {
+  line-height: 1.5;
+  margin: 0 0 17px;
+  padding: 9px 20px 0 19px;
+}
+
+/* line 151, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+blockquote cite {
+  display: block;
+  font-size: 13px;
+  color: #555;
+}
+/* line 156, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+/*= @group Code
+---------------------------------------------------------------------- */
+/* line 163, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 165, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+code {
+  padding: 0 0.2em;
+  color: #333333;
+  background-color: #f3f3f3;
+}
+
+/* line 170, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+pre, .code {
+  color: #d4d4d4;
+  background-color: #333333;
+  margin-bottom: relative-size(24, 16);
+  padding: 1em relative-size(24, 16);
+}
+
+/* line 176, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+pre code, .code code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* line 177, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+.code li {
+  list-style-type: decimal-leading-zero;
+}
+
+/*= @group Tables
+---------------------------------------------------------------------- */
+/* line 182, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 183, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+td {
+  vertical-align: top;
+}
+
+/*= @group Forms
+---------------------------------------------------------------------- */
+/* line 189, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+form {
+  margin: 0;
+}
+
+/* line 190, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 193, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 197, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/* line 202, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 205, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 210, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/* line 213, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 214, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 218, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 221, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 225, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_elements.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/*= @group Scaffolding
+---------------------------------------------------------------------- */
+/* line 4, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/common/_scaffolding.scss */
+body {
+  color: #242424;
+  background-color: #fefefe;
+}
+
+/*= @group Layout
+---------------------------------------------------------------------- */
+/*= @group sprites
+---------------------------------------------------------------------- */
+/*= Sprite Layout
+  ----------------------- */
+/*= Sprite Icons
+  ----------------------- */
+/* line 14, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/components/modules/_sprites.scss */
+[class^="ico-"] {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  *zoom: 1;
+  *display: inline;
+}
+
+/*= @group background
+---------------------------------------------------------------------- */
+/*= @group State
+---------------------------------------------------------------------- */
+/* line 5, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/components/_state.scss */
+.is-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 8, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/components/_state.scss */
+.is-invisible {
+  visibility: hidden;
+}
+
+/* line 10, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/components/_state.scss */
+.is-visible {
+  display: block !important;
+}
+
+/* line 6, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.ir {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+
+/* line 9, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 13, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 19, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.clearfix, .group {
+  *zoom: 1;
+}
+/* line 20, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.clearfix:before, .clearfix:after, .group:before, .group:after {
+  content: "";
+  display: table;
+}
+/* line 21, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.clearfix:after, .group:after {
+  clear: both;
+}
+
+/* line 26, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 27, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 30, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_helpers.scss */
+.middle {
+  display: inline-block;
+  vertical-align: middle;
+  *zoom: 1;
+  *display: inline;
+}
+
+@media print {
+  /* line 7, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 8, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 9, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 10, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 11, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 12, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 13, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 14, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 15, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 17, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 18, /Applications/XAMPP/xamppfiles/htdocs/projetos/kickstart-smacss/assets/stylesheets/sass/_print.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}

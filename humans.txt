@@ -1,0 +1,9 @@
+// Liste as pessoas que forem envolvidas no site( Designer, Desenvolvedor... )
+
+Desenvolvedor Front-End: Anderson Juhasc
+Email: anderson@gmail.com
+Website: http://andersonjuhasc.com
+
+/* SITE */
+Linguagem: Portugues
+    Doctype:HTML5

@@ -1,0 +1,24 @@
+/*= @group sprites
+---------------------------------------------------------------------- */
+
+/*= Sprite Layout
+  ----------------------- */
+// sample
+// @import "layout/*.png";
+// class .s-...
+
+/*= Sprite Icons
+  ----------------------- */
+// @import "icons/*.png";
+
+[class^="ico-"] {
+    // image replacement
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-color: transparent;
+
+    // vertical align middle
+    @include inline-block(middle);
+}
