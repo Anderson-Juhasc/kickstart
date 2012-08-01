@@ -1,8 +1,10 @@
 @mixin box-sizing ($box) {
 //  content-box | border-box | inherit
-  -webkit-box-sizing: $box;
-     -moz-box-sizing: $box;
-          box-sizing: $box;
+    -webkit-box-sizing: $box;
+    -moz-box-sizing: $box;
+    box-sizing: $box;
+
+    *behavior: url(assets/htc/boxsizing.htc);
 }
 @mixin box-siting($type: border-box) {
 
