@@ -13,7 +13,7 @@ Este projeto requer Sass **3.2 alpha** e [Compass](http://compass-style.org/).
 
 Use `compass watch` para assistir as mudanças em seus arquivos.
 
-## Obrigados e Recursos
+## Obrigado e Recursos
 
 Essa ferramenta é baseada nos seguintes projetos:
 
