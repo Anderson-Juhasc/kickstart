@@ -1,6 +1,6 @@
 # Kickstart SMACSS
 
-Kickstart SMACSS é um kit de ferramentas para ajudar no Desenvolvimento Front-End baseado em SASS.
+Kickstart SMACSS é um kit de ferramentas para ajudar no Desenvolvimento Front-End escrito em SASS.
 
 ## Comece a usar agora
 
